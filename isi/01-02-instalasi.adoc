@@ -1,0 +1,42 @@
+== Instalasi dan Penggunaan Python
+
+=== Persyaratan Sistem
+
+Persyaratan sistem untuk menggunakan Python tidak berat, cukup dengan RAM 2 GB dan spesifikasi laptop / PC biasa (Intel/AMD processor) sudah bisa digunakan untuk menjalankan Python. Meskipun demikian, hal ini juga tergantung dari peranti-peranti lainnya. Sebagai contoh, jika ingin menggunakan Visual Studio Code untuk IDE, maka harus menyesuaikan dengan kebutuhan VS Code (memory minimal 4 GB). Dalam kasus penggunaan Python untuk data analytics, kebutuhan spesifikasi komputer akan lebih tinggi. Dengan demikian, kebutuhan persyaratan sistem akan sangat dipengaruhi oleh tujuan penggunaan serta kakas yang digunakan. Untuk pembelajaran normal di buku ini, kebutuhan sistem paling minimal bisa digunakan tetapi jika menggunakan IDE (_Integrated Development Environment_) untuk membuat program Python, mau tidak mau, RAM 16 GB adalah jumlah minimal yang harus dipenuhi.
+
+Penentuan kebutuhan sistem ((Sistem, kebutuhan)) bisa dilihat di <<#gbr-01-01-02>>.
+
+[#gbr-01-01-02]
+.Penentuan kebutuhan persyaratan sistem
+[ditaa, target="penetuan-kebutuhan-persyaratan-sistem"]
+----
+ +--------+            +---------------+
+ |        |            | Kebutuhan     |
+ | Tujuan | menentukan | processor     |
+ |  dan   | ---------> | (CPU-GPU-NPU) |
+ | kakas  |            | dan RAM       |
+ |        |            |               |
+ +---+----+            +---------------+
+----
+
+=== Lihat Kode Sumber Disini
+
+.kode-sumber/01-02/hello-plain/hello.rs
+[source,rust,linenums]
+----
+include::../{sourcedir}/01-02/hello-plain/hello.rs[]
+----
+<1> Penjelasan - callout nomor 1.
+<2> Penjelasan - callout nomor 2.
+
+Untuk kode sumber lain yang tidak berkaitan dengan kode sumber dalam bahasa pemrograman, gunakan ini: (((kode sumber, pemformatan, tampilan shell)))
+
+.rustup
+[source,bash]
+----
+$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+info: mengunduh penginstal
+...
+...
+----
+

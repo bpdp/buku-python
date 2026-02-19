@@ -75,6 +75,10 @@ admonition:
   column-rule-style: solid
   column-rule-color: #aa0000
   column-rule-width: 1
+  border-color: #555555
+  border-width: 0.5
+  border-style: solid
+  border-radius: 3
 title-page:
   align: right
   font-size: 14

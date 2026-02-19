@@ -1,0 +1,39 @@
+== Mengenal Python dan Dunia Pemrograman
+
+=== Apa Python Itu?
+
+Python adalah spesifikasi bahasa pemrograman serta peranti penerjemah (_interpreter_) untuk menjalankan / mengeksekusi _source code_ (kode sumber) yang dibuat menggunakan bahasa pemrograman Python tersebut. Dengan demikian, perlu dipahami bahwa saat kita membicarakan tentang pemrograman, terdapat 2 hal yang harus diketahui:
+
+1. Spesifikasi bahasa pemrograman. Spesifikasi menjelaskan sintaksis dari bahasa pemrograman, terlepas dari implementasinya. Spesifikasi bersifat konsepsual dan akan menjadi pegangan bagi vendor maupun komunitas untuk membangun mesin virtual atau penerjaemah atau kompilator yang akan mengimplementasikan spesifikasi tersebut.
+2. Penerjemah / _interpreter_ (bersama dengan mesin virtual) atau kompilator (_compiler_) yang mengimpelemntasikan spesifikasi bahasa pemrograman tersebut. Kakas inilah yang biasanya digunakan oleh para pemrograman. 
+
+Mempelajari pemrgoraman mau tidak mau harus mempelajari dua hal tersebut dan harus memahami bahwa antara implementasi satu dengan lainnya bisa saja terjadi perbedaan. Secara umum, software Python yang merupakan implementasi dari spesifikasi bahasa pemrograman Python biasanya bisa diambil dari https://www.python.org meskipun beberapa perusahan maupun komunitas developer juga membuat distribusi Python maupun versi interpreter Python untuk platform tertentu. Python dari situs web tersebut dikenal dengan istilah CPython dan merupakan reference implementation dari spesifikasi Python. Beberapa distribusi atau implementasi Python lainnya:
+
+1. Jython (Python di JVM)
+2. IronPython (Python di .NET)
+3. Stackless (Python dengan microthreads - threads yang tidak dikelola oleh OS, tetapi dikelola oleh Stackless).
+4. MicroPython (Python untuk microcontroller)
+5. PyPy (Python JIT Compiler)
+6. Anaconda (Python standar yang sudah menyertakan conda).
+7. Intel Distribution for Python, bisa diperoleh di situs Intel (https://software.intel.com/en-us/python-distribution).
+
+Python dibuat pertama kali oleh Guido van Rossum dan saat ini dikembangkan oleh komunitas di bawah kendali PSF (Python Software Foundation - https://www.python.org/psf/). Untuk selanjutnya, istilah Python akan mengacu pada spesifikasi serta software untuk interpreter Python tersebut.
+
+Python digunakan untuk pemrograman umum (bisa digunakan untuk berbagai domain masalah), bertipe dinamis, tidak perlu dikompillasi (_interpreted_), mendukung berbagai paradigma pemrograman (OOP, functional, procedural, imperatif) serta bisa digunakan di berbagai platform (Windows, Linux, MacOS, FreeBSD, NetBSD, dan lain-lain). Jika dilihat dari level kedekatan dengan mesin, Python bisa dikategorikan sebagai _high level programming language_ yang sintaksisnya diarahkan untuk bisa dipahami oleh manusia tetapi tidak dipahami oleh mesin <<HWang-01>>.
+
+Materi di buku ini menggunakan standar Python (CPython) serta uv (https://docs.astral.sh/uv/). Saat ini, versi Python ada 2: versi 2.x dan versi 3.x. Keduanya tidak kompatibel. Materi ini menggunakan versi 3.x. Pada pembahasan yang lebih khusus, jika diperlukan akan disebutkan versi pasti dari Python yang digunakan.
+
+=== Aplikasi  Apa yang Cocok DIkembangkan Menggunakan Python?
+
+Python digunakan pada berbagai domain masalah. Meskipun demikian, Python tidak cocok digunakan untuk semua domain masalah. Masalah-masalah yang terkait dengan akses low level biasanya bukan merupakan bagian Python. Meskipun kadang Python digunakan untuk peranti pengembangan yang terkait dengan akses low level, biasanya hanya merupakan peranti level atas - akses ke peranti keras dibuat menggunakan C/C++/Rust dan dikompilasi menjadi modul Python. Python juga tidak cocok digunakan untuk pembuatan aplikasi mobile phone. Untuk memberikan gambaran masalah apa saja yang bisa diselesaikan menggunakan Python, silahkan melihat pada daftar kisah sukses Python di https://www.python.org/about/success/ pada <<gbr-01-01-01>>.
+
+[[gbr-01-01-01]]
+.Situs Web Python - Kisah Sukses Penggunaan Python
+[link=https://www.python.org/about/success]
+image::01-01/01-01.png[]
+
+[CAUTION]
+.Hati-hati membaca kisah kesuksesan dan kegagalan proyek software
+====
+Kesuksesan maupun kegagalan proyek software mereupakan hal yang dipengaruhi oleh banyak faktor, mulai dari faktor teknis sampai dengan faktor pengelolaan SDM maupun proyek atau hal-hal lain yang sulit untuk dipahami secara rasional (ancaman-ancaman misalnya). Dengan demikian, kita tidak bisa mengatakan bahwa suatu proyek sukses atau gagal karena menggunakan Python (atau bahasa pemrograman lainnya).
+====

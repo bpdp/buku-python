@@ -1,4 +1,4 @@
-= Book Title
+= Pemrograman Python: Dari Dasar Sampai Paradigma Pemrograman
 Dr. Bambang Purnomosidi D. P. <bambangpdp@gmail.com>
 v0.0.1-rev-{localdatetime}
 :doctype: book
@@ -52,27 +52,52 @@ Tentu saja ada kemungkinan kesalahan dalam buku ini. Jika terdapat kesalah, sila
 Yogyakarta, 2026 +
 Dr. Bambang Purnomosidi D. P.
 
-= Bagian I: Judul Bagian I
+= Bagian I: Latar Belakang dan Operasional Python
 
 [partintro]
 --
-Deskripsi singkat bagian I dari buku.
+Bagian ini menjelaskan tentang hal-hal yang bersifat teoritis dan diperlukan untuk memahami ekosistem Python serta cara memulai menggunakan Python. Tujuan utama dari bagian ini adalah pemahaman yang cukup kuat terhadap ekosistem Python serta bisa mulai menggunakan Python di dalam peranti komputasi.
 --
 
-include::{includedir}/01-01-judul.adoc[]
+include::{includedir}/01-01-pengantar.adoc[]
 
-include::{includedir}/01-02-judul.adoc[]
+include::{includedir}/01-02-instalasi.adoc[]
 
-= Bagian II: Judul Bagian II
+include::{includedir}/01-03-ide.adoc[]
+
+= Bagian II: Sintaksis Dasar Python
 
 [partintro]
 --
-Deskripsi singkat bagian II dari buku.
+Bagian ini menjelaskan tentang sintaksis dasar dari bahasa pemrograman Python. Dengan mempelajari dan menguasi sintaksis dasar ini, pembelajar bisa membuat dan mengimplementasikan algoritma dengan menggunakan Python. Meskipun demikian, karena sifatnya masih sintaksis dasar, maka algoritma yang bisa dikerjakan juga merupakan algoritma dasar.
 --
 
-include::{includedir}/02-01-judul.adoc[]
+include::{includedir}/02-01-dasar.adoc[]
 
-include::{includedir}/02-02-judul.adoc[]
+include::{includedir}/02-02-pengendalian-alur.adoc[]
+
+include::{includedir}/02-03-fungsi.adoc[]
+
+include::{includedir}/02-04-struktur-data.adoc[]
+
+include::{includedir}/02-05-modul.adoc[]
+
+include::{includedir}/02-06-operasi-io.adoc[]
+
+include::{includedir}/02-07-error-exception.adoc[]
+
+= Bagian III: Paradigma Pemrograman di Python
+
+[partintro]
+--
+Bagian ini menjelaskan tentang berbagai paradigma pemrograman yang bisa digunakan di Python. Paradigma pemrograman merupakan cara pandang untuk menyelesaikan masalah pemrograman tertentu. Bagian ini dirasa paling membingungkan oleh para pembelajar Python sehingga sepantasnya bagian ini memerlukan bagian tersendiri. Bagian ini bertujuan supaya para pembelajar bisa menggunakan berbagai modul pihak ketiga yang banyak memanfaatkan berbagai paradigma pemrograman serta mampu menyelesaikan masalah pemrograman menggunakan paradigma tertentu.
+--
+
+include::{includedir}/03-01-oop.adoc[]
+
+include::{includedir}/03-02-functional.adoc[]
+
+include::{includedir}/03-03-concurrent-programming.adoc[]
 
 [bibliography]
 include::{includedir}/tambahan-00-bibliografi.adoc[]
